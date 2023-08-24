@@ -1,0 +1,295 @@
+    body {
+        background-color: #ede7f6;
+        font-family: Roboto, Sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .custom-container {
+        height: 2000px;
+        width: 600px;
+        margin: auto;
+    }
+
+    .header-container {
+        height: auto;
+        width: 650px;
+        background-color: #FDFEFE;
+        margin: 15px;
+        border-radius: 8px;
+        border-top: 8px solid #6703c4;
+        padding: 25px;
+    }
+    
+    .account-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .email {
+        margin-right: 10px;
+    }
+    
+    .account-switch-button {
+        padding: 8px 12px;
+        border: none;
+        background-color: transparent;
+        color: #4285f4;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: -18px;
+    } 
+
+    .required{
+        font-size: 13px;
+        color: red;
+        }
+
+   
+
+  
+
+    .rating-container{
+        
+        width: 650px;
+        background-color: #FDFEFE;
+        margin: 15px;
+        border-radius: 8px;
+        border: none;
+        padding: 20px;
+        border-radius: 4px;
+        
+        max-width: 650px;
+    }
+
+    .check-container{
+        width: 650px;
+        background-color: #FDFEFE;
+        margin: 15px;
+        border-radius: 8px;
+        margin-top: 60px;
+        border: none;
+        padding: 20px;
+        margin-top: -1px;
+        border-radius: 4px;
+
+    }
+
+    .rate {
+        height: 180px;
+        border: none;
+        padding: 20px;
+        border-radius: 4px;
+        width: 650px;
+        margin: 15px;
+    }
+    
+    .rate .one {
+        margin-left: 10%;
+    }
+    
+    .rate table {
+        margin: 0 auto;
+        width: 80%;
+        border-collapse: collapse; 
+    }
+    
+    .rate td {
+        padding: 10px 20px; 
+        text-align: center;
+       
+    }
+    
+      
+    .card {
+        
+        height: 180px;
+        border: none;
+        padding: 20px;
+        border-radius: 4px;
+        width: 650px;
+        max-width: 650px;
+        margin: 15px;
+        margin-top: 10px;
+    }
+
+    
+    .form-range {
+        width: 100%;
+    }
+
+    .form-control{
+        width:30%;
+        margin-left: 18px;
+        margin-top: 20px;
+    }
+
+    /* Add this to your existing CSS */
+
+    .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: #f5f5f5;
+    width:20%;
+    margin-left: 18px;
+    margin-top: 15px;
+    }
+
+    .custom-file-upload:hover {
+    background-color: #e0e0e0;
+    }
+
+    .button-icon {
+    margin-right: 8px;
+    }
+
+    .button-icon i {
+    font-size: 16px;
+    }
+
+    .button-text {
+    font-size: 14px;
+    color: #333;
+    }
+
+    /* Hide the file input */
+    .custom-file-upload input[type="file"] {
+    display: none;
+    }
+
+
+    .table {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #ede7f6;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .buttons {
+        display: flex;
+        padding: 10px;
+        
+        align-items: center;
+    }
+    
+    .page-number {
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+    }
+    
+    .disclaimer {
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+
+    .single-line,
+    .multi-line {
+    width: 100%;
+    max-width: 600px;
+    /* background-color: #fff; */
+    background: none !important;
+    border: none !important;
+
+    }
+
+    .single-line {
+    display: flex;
+    align-items: center;
+    border: none;
+    /* height: 20px; */
+    width: 50%;
+    }
+
+
+    .multi-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: none;
+    overflow: hidden;
+    }
+
+    .multi-line textarea {
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        outline: none;
+        border-bottom: 1px solid #ccc;
+    
+        /* Set a fixed height and enable vertical scrolling after that height */
+        height: 80px; /* Adjust this value as needed */
+        overflow-y: auto;
+        resize: none; /* Disable textarea resizing */
+    }
+    
+
+    .single-line input,
+    .multi-line textarea {
+    outline: none;
+    
+    background-color: transparent;
+    resize: none;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #ccc !important;
+    
+}
+
+.custom-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.rating-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.rating-item.rounded {
+    border-radius: 50%;
+    background-color: #ddd;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+.rate{
+    
+    height: 150px;
+    width: 650px;
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    align-items: center;
+}

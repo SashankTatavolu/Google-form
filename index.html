@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Forms-like Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container custom-container">
+        <div class="header-container">
+            <h1>Assignment Task</h1>
+        <hr />
+            <div class="account-info">
+                <p class="email">xyz@gmail.com</p>
+                <button class="account-switch-button" id="account-switch-button">Switch Account</button>
+            </div>  
+            <p>The name and photo associated with your Google Account will be recorded when you upload files and submit this form. Your email address is not part of your response.</p>
+            <hr />
+            <p class="required">*Indicates required question</p>
+        </div>
+        <!-- Question 1 Container -->
+        
+            <div class="card">
+                <p class="card-title">1. What is your favorite color?*</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="color" value="red" id="colorRed">
+                    <label class="form-check-label" for="colorRed">Red</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="color" value="blue" id="colorBlue">
+                    <label class="form-check-label" for="colorBlue">Blue</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="color" value="green" id="colorGreen">
+                    <label class="form-check-label" for="colorGreen">Green</label>
+                </div>
+            </div>
+        
+
+        <!-- Question 2 Container -->
+        
+            <div class="card">
+                <p class="card-title">2. Select your hobbies:</p>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="hobbies" value="reading" id="hobbyReading">
+                    <label class="form-check-label" for="hobbyReading">Reading</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="hobbies" value="traveling" id="hobbyTraveling">
+                    <label class="form-check-label" for="hobbyTraveling">Traveling</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="hobbies" value="gaming" id="hobbyGaming">
+                    <label class="form-check-label" for="hobbyGaming">Gaming</label>
+                </div>
+            </div>
+        
+
+        <!-- Question 3 Container -->
+        
+            <div class="card">
+                <p class="card-title">3. What is your favorite book?</p>
+                <div class="single-line">
+                    <input type="text" class="form-control no-border" name="favoriteBook">
+                </div>
+            </div>
+        
+
+        <!-- Question 4 Container -->
+       
+        <div class="card" id="paragraphCard">
+            <p class="card-title">4. Write a short paragraph about your hobbies:</p>
+            <div class="multi-line">
+                <textarea class="form-control no-border" id="hobbiesParagraph" rows="1"></textarea>
+            </div>
+        </div>
+        
+        
+        
+       
+
+        <!-- Question 5 Container -->
+        
+            <div class="card">
+                <p class="card-title">5. Choose your preferred programming language:</p>
+                <select class="form-control" name="programmingLanguage">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        
+
+        <!-- Question 6 Container -->
+        
+        <div class="card">
+            <p class="card-title">6. Upload a file:</p>
+            <label for="fileUpload" class="custom-file-upload">
+                <span class="button-icon"><i class="fas fa-file-upload"></i></span>
+                <span class="button-text">Add File</span>
+                <input type="file" id="fileUpload" name="fileUpload" style="display:none;">
+            </label>
+        </div>
+        
+        
+        
+
+        <!-- Question 7 Container -->
+        
+        <div class="rate">
+            
+                <p class="card-title">7. Rate your experience with this course:</p>
+                    <table class="one">
+                        <thead>
+                        <tr>
+                            <th></th>       
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Worst</td>
+                            <td><input type="radio" name="quality" value="poor"></td>
+                            <td><input type="radio" name="quality" value="neutral"></td>
+                            <td><input type="radio" name="quality" value="good"></td>
+                            <td><input type="radio" name="quality" value="neutral"></td>
+                            <td><input type="radio" name="quality" value="good"></td>
+                            <td>Best</td>
+                        </tr>
+                    </tbody>    
+                    </table>
+        </div>
+
+
+        <!-- Question 8 Container -->
+        <div class="rating-container">
+            
+                <p class="card-title">8. Rate the following aspects of the product:</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Poor</th>
+                            <th>Neutral</th>
+                            <th>Good</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Quality</td>
+                            <td><input type="radio" name="quality" value="poor"></td>
+                            <td><input type="radio" name="quality" value="neutral"></td>
+                            <td><input type="radio" name="quality" value="good"></td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td><input type="radio" name="performance" value="poor"></td>
+                            <td><input type="radio" name="performance" value="neutral"></td>
+                            <td><input type="radio" name="performance" value="good"></td>
+                        </tr>
+                        <tr>
+                            <td>Usage</td>
+                            <td><input type="radio" name="usage" value="poor"></td>
+                            <td><input type="radio" name="usage" value="neutral"></td>
+                            <td><input type="radio" name="usage " value="good"></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            
+        </div>
+
+        <!-- Question 9 Container -->
+        <div class="check-container">
+            
+                <p class="card-title">9. Select the features you like:</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Like</th>
+                            <th>Like</th>
+                            <th>Like</th>   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Easy to use</td>
+                            <td><input type="checkbox" name="features" value="easyToUse"></td>
+                            <td><input type="checkbox" name="features" value="easyToUse"></td>
+                            <td><input type="checkbox" name="features" value="easyToUse"></td>
+                        </tr>
+                        <tr>
+                            <td>Compatibility</td>
+                            <td><input type="checkbox" name="features" value="fastPerformance"></td>
+                            <td><input type="checkbox" name="features" value="fastPerformance"></td>
+                            <td><input type="checkbox" name="features" value="fastPerformance"></td>
+                        </tr>   
+                        <tr>
+                            <td>Fast performance</td>
+                            <td><input type="checkbox" name="features" value="fastPerformance"></td>
+                            <td><input type="checkbox" name="features" value="fastPerformance"></td>
+                            <td><input type="checkbox" name="features" value="fastPerformance"></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="buttons">
+                <input class="btn" type="submit" name="Submit">
+        
+        </div>
+        <div class="page-number">Page 1/2</div>
+            <div class="buttons">
+                <button class="btn btn-secondary">Submit</button>
+        </div>
+        </div>
+        <div class="disclaimer">
+            <p>Never submit passwords through Google Forms.<br>
+                This content is neither created nor endorsed by Google. Report Abuse - Terms of Service - Privacy Policy<br>
+                Google Forms</p>
+        </div>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
